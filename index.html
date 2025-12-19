@@ -3,10 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="styles.css">
+
     <title>Accessible Design Co.</title>
 </head>
 <body>
-    <nav>Navigation</nav>
-    SBA-2-Accessible Design Co.
+    
+
+    <header>
+        <nav role="navigation" aria-label="Main navigation">
+            <h1>Accessible Design Co.</h1>
+            <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>   
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Designing Digital Experiences</h2>
+            <p>Creative solutions for modern businesses</p>
+            <button>Get Started</button>
+        </section>
+        <div class="hero-image">
+        <div class="hero-text">iv>
+        </div>
+
+        <img src="team.jpg" alt="Design Co. team collaborating in office">
+        <img src="decorative-shape.svg" alt="">
+    
+        <section id="services">
+            <h2>Our Services</h2>
+        <div class="services-grid">
+        <article>
+          <h3>Web Design</h3>
+          <p>Accessible, responsive websites.</p>
+        </article>
+
+        <article>
+          <h3>Brand Identity</h3>
+          <p>Visual systems that stand out.</p>
+        </article>
+
+        <article>
+          <h3>UX Strategy</h3>
+          <p>User-centered design decisions.</p>
+        </article>
+      </div>
+    </section>
+
+    
+    <section id="about">
+      <h2>About Design Co.</h2>
+      <p>We are a fictitious creative agency focused on thoughtful design.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+
+      <form>
+        <label for="name">Name</label>
+        <input id="name" type="text" aria-describedby="name-help">
+        <small id="name-help">Enter your full name</small>
+
+        <label for="email">Email</label>
+        <input id="email" type="email">
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Design Co.</p>
+    </footer>
 </body>
 </html>
