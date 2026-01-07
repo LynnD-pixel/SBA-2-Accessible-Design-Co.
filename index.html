@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" href="styles.css">
-
-    <title>Accessible Design Co.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessiblility Design Co.</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <img src="./images.jpg/Untitled design (2).png" alt="Accessiblility Design Co. logo" class="logo">
 
-    <header>
-        <nav role="navigation" aria-label="Main navigation">
-            <h1>Accessible Design Co.</h1>
-            <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-            </ul>   
-        </nav>
-    </header>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section id="hero">
-            <h2>Designing Digital Experiences</h2>
-            <p>Creative solutions for modern businesses</p>
-            <button>Get Started</button>
-        </section>
-        <div class="hero-image">
-        <div class="hero-text">iv>
-        </div>
+  <main>
 
-        <img src="team.jpg" alt="Design Co. team collaborating in office">
-        <img src="decorative-shape.svg" alt="">
-    
-        <section id="services">
-            <h2>Our Services</h2>
-        <div class="services-grid">
+  <section class="hero-image"></section>
+
+<section id="home" class="hero-content">
+  <h1>Designing Digital Experiences</h1>
+  <p>Creative solutions for modern businesses.</p>
+  <a href="#contact" class="cta-button">Get Started</a>
+</section>
+
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Accessibility Design Co. is a creative agency focused on accessible,
+        responsive, and user-friendly web design.
+      </p>
+    </section>
+
+
+    <section id="services">
+      <h2>Our Services</h2>
+
+      <div class="services-grid">
         <article>
           <h3>Web Design</h3>
-          <p>Accessible, responsive websites.</p>
+          <p>Responsive and accessible websites.</p>
         </article>
 
         <article>
           <h3>Brand Identity</h3>
-          <p>Visual systems that stand out.</p>
+          <p>Consistent and memorable branding.</p>
         </article>
 
         <article>
@@ -55,31 +62,37 @@
       </div>
     </section>
 
-    
-    <section id="about">
-      <h2>About Design Co.</h2>
-      <p>We are an  agency focused on thoughtful design.</p>
-    </section>
-
+  
     <section id="contact">
       <h2>Contact Us</h2>
 
-      <form>
+      <form action="thank-you.html" method="GET">
         <label for="name">Name</label>
-        <input id="name" type="text" aria-describedby="name-help">
-        <small id="name-help">Enter your full name</small>
+        <input id="name" name="name" type="text" placeholder="Gary Vee" required>
 
         <label for="email">Email</label>
-        <input id="email" type="email">
+        <input id="email" name="email" type="email" placeholder="gary.vee@gmail.com" required>
 
-        <button type="submit">Send</button>
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" placeholder="Web Design">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message..."
+          aria-describedby="message-help"></textarea>
+        <small id="message-help">
+          Please include details about your inquiry.
+        </small>
+
+        <button type="submit">Send Message🎉</button>
       </form>
     </section>
 
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 Design Co.</p>
-    </footer>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Accessibility Design Co.</p>
+    <p>Email: info@accessibility.com</p>
+  </footer>
+
 </body>
 </html>
